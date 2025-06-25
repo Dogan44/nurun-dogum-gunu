@@ -1,0 +1,16 @@
+const correctPassword = "dogumgunu2025"; // Şifrenizi buraya yazın
+
+function checkPassword() {
+    const enteredPassword = document.getElementById("password").value;
+    if (enteredPassword === correctPassword) {
+        document.getElementById("loginScreen").style.display = "none";
+        document.getElementById("welcomeScreen").style.display = "block";
+    } else {
+        alert("Yanlış şifre, tekrar deneyin!");
+    }
+}
+
+function exitSite() {
+    document.getElementById("welcomeScreen").style.display = "none";
+    document.getElementById("loginScreen").style.display = "block";
+}
